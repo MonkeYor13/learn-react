@@ -1,7 +1,25 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from "react";
+import ReactDOM from "react-dom/client";
 
+//boton desde una funcion
+const createBtn = () => {
+  return <button>hola</button>;
+};
+//boton desde una funcion con parametros
+const createBtnWithParametros = ({ text }) => {
+  return <button>{text}</button>;
+};
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <button>hola</button>
-)
+//para crear elementos en react, se hacen desde clases y van con la primera letra en Mayuscula
+const ClassBtnWithParametros = ({ text }) => {
+  return <button>{text}</button>;
+};
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.Fragment>
+    <button>boton comun</button>
+    {createBtn()}
+    {createBtnWithParametros({ text: "boton con parametros" })}
+    <ClassBtnWithParametros/>
+  </React.Fragment>
+);
