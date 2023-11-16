@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+//correo el local con npm run dev
+
 //boton desde una funcion
 const createBtn = () => {
   return <button>hola</button>;
