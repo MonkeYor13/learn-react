@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 //imports
 import "./index.css";
-import { App } from "./app";
+import { App } from "./App";
 
 
 //correo el local con npm run dev
