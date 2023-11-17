@@ -1,5 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+//imports
+import "./index.css";
+import { App } from "./app";
+
 
 //correo el local con npm run dev
 
@@ -19,9 +23,10 @@ const ClassBtnWithParametros = ({ text }) => {
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.Fragment>
-    <button>boton comun</button>
+    {/* <button>boton comun</button>
     {createBtn()}
     {createBtnWithParametros({ text: "boton con parametros" })}
-    <ClassBtnWithParametros/>
+    <ClassBtnWithParametros/> */}
+    <App />
   </React.Fragment>
-);
+)
